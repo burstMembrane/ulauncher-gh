@@ -1,0 +1,34 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "GitHub Search",
+  "description": "Quick Search for a repo on github - with ordering",
+  "developer_name": "Liam Power",
+  "icon": "images/github-mark-white.png",
+  "options": {
+    "query_debounce": 0.05
+  },
+  "preferences": [
+    {
+      "id": "order",
+      "type": "select",
+      "name": "Order",
+      "description": "The order to display the results",
+      "default_value": "best_match",
+      "options": ["best_match", "stars", "forks", "updated"]
+    },
+    {
+      "id": "gh",
+      "type": "keyword",
+      "name": "gh - Search github repositories",
+      "default_value": "gh"
+    },
+    {
+      "id": "auth_token",
+      "type": "text",
+      "name": "GitHub Auth Token for API calls"
+      
+      
+    }
+  
+  ]
+}
